@@ -10,7 +10,7 @@ Load the plugin from a working tree instead of through the marketplace:
 claude --plugin-dir /path/to/cc-t3-jobs
 ```
 
-Every Claude Code restart re-reads the plugin from disk, with no `/plugin install` and no marketplace cache to flush. Hooks load at session start, so a change to `hooks/hooks.json` or to a handler needs a restart before it takes effect.
+Every Claude Code restart re-reads the plugin from disk, with no `/plugin install` and no marketplace cache to flush. The plugin has no hooks. The skill runs `scripts/t3_job.sh` from disk, so an edit applies to the next command. Stop and start a running job after you change the script.
 
 ## Tests
 
