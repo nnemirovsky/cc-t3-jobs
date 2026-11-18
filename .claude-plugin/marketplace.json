@@ -1,0 +1,15 @@
+{
+  "name": "t3-jobs",
+  "version": "0.1.0",
+  "description": "Runs long watch scripts for T3 Code threads as systemd user units that wake the thread through its webhook, instead of Claude Code Monitors",
+  "owner": {
+    "name": "nnemirovsky"
+  },
+  "plugins": [
+    {
+      "name": "t3-jobs",
+      "source": "./",
+      "description": "Runs long watch scripts for T3 Code threads as systemd user units that wake the thread through its webhook, instead of Claude Code Monitors"
+    }
+  ]
+}
